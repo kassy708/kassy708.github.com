@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="JsDoc Toolkit" />
 		
-		<title>JsDoc Reference - enchant.PhysicsWorld</title>
+		<title>JsDoc Reference - enchant.BaseJoint</title>
 
 		<style type="text/css">
 			/* default.css */
@@ -220,7 +220,7 @@ ul.inheritsList
 <!-- ============================== class title ============================ -->
 			<h1 class="classTitle">
 				
-				Class enchant.PhysicsWorld
+				Class enchant.BaseJoint
 			</h1>
 
 <!-- ============================== class summary ========================== -->			
@@ -237,7 +237,7 @@ ul.inheritsList
 
 <!-- ============================== constructor summary ==================== -->			
 			
-			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class enchant.PhysicsWorld.">
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class enchant.BaseJoint.">
 				<caption>Class Summary</caption>
 				<thead>
 					<tr>
@@ -250,9 +250,9 @@ ul.inheritsList
 						<td class="attributes">&nbsp;</td>
 						<td class="nameDescription" >
 							<div class="fixedFont">
-								<b><a href="../symbols/enchant.PhysicsWorld.html#constructor">enchant.PhysicsWorld</a></b>(gravityX, gravityY)
+								<b><a href="../symbols/enchant.BaseJoint.html#constructor">enchant.BaseJoint</a></b>(sprite1, sprite2)
 							</div>
-							<div class="description">物理シミュレーションを行う世界のクラス</div>
+							<div class="description">ジョイントの親クラス</div>
 						</td>
 					</tr>
 				</tbody>
@@ -263,7 +263,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class enchant.PhysicsWorld.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class enchant.BaseJoint.">
 					<caption>Field Summary</caption>
 					<thead>
 						<tr>
@@ -277,9 +277,19 @@ ul.inheritsList
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
 								<div class="fixedFont">
-								<b><a href="../symbols/enchant.PhysicsWorld.html#iterations">iterations</a></b>
+								<b><a href="../symbols/enchant.BaseJoint.html#sprite1">sprite1</a></b>
 								</div>
-								<div class="description">物理シミュレーションの精度</div>
+								<div class="description">ジョイントのアンカー1.</div>
+							</td>
+						</tr>
+					
+						<tr>
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/enchant.BaseJoint.html#sprite2">sprite2</a></b>
+								</div>
+								<div class="description">ジョイントのアンカー2.</div>
 							</td>
 						</tr>
 					
@@ -294,7 +304,7 @@ ul.inheritsList
 			
 				
 				
-				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class enchant.PhysicsWorld.">
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class enchant.BaseJoint.">
 					<caption>Method Summary</caption>
 					<thead>
 						<tr>
@@ -307,54 +317,9 @@ ul.inheritsList
 						<tr>
 							<td class="attributes">&nbsp;</td>
 							<td class="nameDescription">
-								<div class="fixedFont"><b><a href="../symbols/enchant.PhysicsWorld.html#cleanAllJoint">cleanAllJoint</a></b>()
+								<div class="fixedFont"><b><a href="../symbols/enchant.BaseJoint.html#destroy">destroy</a></b>()
 								</div>
-								<div class="description">ワールドにあるすべてのジョイントを削除</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont"><b><a href="../symbols/enchant.PhysicsWorld.html#cleanAllSprite">cleanAllSprite</a></b>()
-								</div>
-								<div class="description">ワールドにあるすべてのオブジェクトを削除シーンの切り替わり時に呼んでおかないと、次のシーンでも衝突判定がおこってしまう。</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont"><b><a href="../symbols/enchant.PhysicsWorld.html#cleanUp">cleanUp</a></b>()
-								</div>
-								<div class="description">ワールドのすべてを削除</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont"><b><a href="../symbols/enchant.PhysicsWorld.html#contact">contact</a></b>(func)
-								</div>
-								<div class="description">物体の当たり判定</div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont"><b><a href="../symbols/enchant.PhysicsWorld.html#getJointImage">getJointImage</a></b>()
-								</div>
-								<div class="description"></div>
-							</td>
-						</tr>
-					
-						<tr>
-							<td class="attributes">&nbsp;</td>
-							<td class="nameDescription">
-								<div class="fixedFont"><b><a href="../symbols/enchant.PhysicsWorld.html#step">step</a></b>(pos)
-								</div>
-								<div class="description">物理シミュレーション内の時間を進める</div>
+								<div class="description">ジョイントの削除</div>
 							</td>
 						</tr>
 					
@@ -375,17 +340,13 @@ ul.inheritsList
 				</div>
 				
 				<div class="fixedFont">
-						<b>enchant.PhysicsWorld</b>(gravityX, gravityY)
+						<b>enchant.BaseJoint</b>(sprite1, sprite2)
 				</div>
 				
 				<div class="description">
-					物理シミュレーションを行う世界のクラス
+					ジョイントの親クラス
 					
 				</div>
-				
-				
-				
-				<pre class="code">  //y軸方向へ重力加速度9.8m/s^2  var physicsWorld = new PhysicsWorld(0, 9.8);  //無重力  var physicsWorld = new PhysicsWorld(0, 0);</pre>
 				
 				
 				
@@ -395,16 +356,16 @@ ul.inheritsList
 						<dt class="heading">Parameters:</dt>
 						
 							<dt>
-								<span class="light fixedFont">{Number}</span>  <b>gravityX</b>
+								<span class="light fixedFont">{<a href="../symbols/enchant.PhySprite.html">enchant.PhySprite</a>}</span>  <b>sprite1</b>
 								<i>Optional</i>
 							</dt>
-								<dd>x軸方向への引力.</dd>
+								<dd>繋げるスプライト1</dd>
 						
 							<dt>
-								<span class="light fixedFont">{Number}</span>  <b>gravityY</b>
+								<span class="light fixedFont">{<a href="../symbols/enchant.PhySprite.html">enchant.PhySprite</a>}</span>  <b>sprite2</b>
 								<i>Optional</i>
 							</dt>
-								<dd>y軸方向への引力.</dd>
+								<dd>繋げるスプライト2</dd>
 						
 						</dl>
 					
@@ -424,15 +385,37 @@ ul.inheritsList
 					Field Detail
 				</div>
 				
-					<a name="iterations"> </a>
+					<a name="sprite1"> </a>
 					<div class="fixedFont">
 					
 					
-					<b>iterations</b>
+					<b>sprite1</b>
 					
 					</div>
 					<div class="description">
-						物理シミュレーションの精度
+						ジョイントのアンカー1.
+						
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="sprite2"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>sprite2</b>
+					
+					</div>
+					<div class="description">
+						ジョイントのアンカー2.
 						
 						
 					</div>
@@ -454,172 +437,21 @@ ul.inheritsList
 					Method Detail
 				</div>
 				
-					<a name="cleanAllJoint"> </a>
+					<a name="destroy"> </a>
 					<div class="fixedFont">
 					
 					
-					<b>cleanAllJoint</b>()
+					<b>destroy</b>()
 					
 					</div>
 					<div class="description">
-						ワールドにあるすべてのジョイントを削除
+						ジョイントの削除
 						
 						
 					</div>
 					
 					
 					
-						
-						
-						
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name="cleanAllSprite"> </a>
-					<div class="fixedFont">
-					
-					
-					<b>cleanAllSprite</b>()
-					
-					</div>
-					<div class="description">
-						ワールドにあるすべてのオブジェクトを削除シーンの切り替わり時に呼んでおかないと、次のシーンでも衝突判定がおこってしまう。
-						
-						
-					</div>
-					
-					
-					
-						
-						
-						
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name="cleanUp"> </a>
-					<div class="fixedFont">
-					
-					
-					<b>cleanUp</b>()
-					
-					</div>
-					<div class="description">
-						ワールドのすべてを削除
-						
-						
-					</div>
-					
-					
-					
-						
-						
-						
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name="contact"> </a>
-					<div class="fixedFont">
-					
-					
-					<b>contact</b>(func)
-					
-					</div>
-					<div class="description">
-						物体の当たり判定
-						
-						
-					</div>
-					
-					
-					
-					<pre class="code">  //ぶつかった2つのSpriteを消す  physicsWorld.contact(function (sprite1, sprite2) {      sprite1.destroy();      sprite2.destroy();   });</pre>
-					
-					
-					
-						
-							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
-							
-								<dt>
-									<span class="light fixedFont">{function(sprite1:enchant.PhySprite|sprite2:enchant.PhySprite)}</span> <b>func</b>
-									<i>Optional</i>
-								</dt>
-								<dd>当たり判定時の処理</dd>
-							
-							</dl>
-						
-						
-						
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name="getJointImage"> </a>
-					<div class="fixedFont">
-					
-					
-					<b>getJointImage</b>()
-					
-					</div>
-					<div class="description">
-						
-						
-						
-					</div>
-					
-					
-					
-						
-						
-						
-						
-						
-						
-						
-
-					<hr />
-				
-					<a name="step"> </a>
-					<div class="fixedFont">
-					
-					
-					<b>step</b>(pos)
-					
-					</div>
-					<div class="description">
-						物理シミュレーション内の時間を進める
-						
-						
-					</div>
-					
-					
-					
-						
-							<dl class="detailList">
-							<dt class="heading">Parameters:</dt>
-							
-								<dt>
-									<span class="light fixedFont">{b2Vec2}</span> <b>pos</b>
-									<i>Optional</i>
-								</dt>
-								<dd>Spriteの座標.</dd>
-							
-							</dl>
 						
 						
 						
@@ -642,7 +474,7 @@ ul.inheritsList
 <!-- ============================== footer ================================= -->
 		<div class="fineprint" style="clear:both">
 			
-			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Thu Mar 29 2012 23:39:19 GMT+0900 (JST)
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Thu Mar 29 2012 23:39:18 GMT+0900 (JST)
 		</div>
 	</body>
 </html>
